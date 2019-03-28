@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link rel="stylesheet" href="styles/payment-form.css">
+  </head>
+  <body>
+    <p>This is my page</p>
+      <form method="POST">
+        <h1>Payment form</h1>
+        <p> Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>   
+        <section>
+            <h2>Contact information</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li>
+                        <label for="title_1">
+                            <input type="radio" id="title_1" name="title" value="M.">
+                            Mister
+                        </label>>
+                    </li>
+                    <li>
+                        <label for="title_2">
+                            <input type="radio" id="title_2" name="title" value="Ms.">
+                            Miss
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>  
+            <div>
+                <label for="name"><span>Name:</span><strong><abbr title="required">*</abbr></strong></label>
+                <input type="text" id="name" name="username">
+            </div>
+            <div>
+                <label for="mail"><span>E-mail:</span><strong><abbr title="required">*</abbr></strong>></label>
+                <input type="email" id="mail" name="usermail">
+            </div>
+            <div>
+                <label for="pwd"><span>Password:</span><strong><abbr title="required">*</abbr></strong></label>
+                <input type="text" id="pwd" name="password">
+            </div>
+        </section>
+        <section>
+            <h2>Payment information</h2>
+            <div>
+                <label for="card"><span>Card type:</span></label>
+                <select name="usercard" id="card">
+                    <option value="visa">visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="ames">American Express</option>
+                </select>
+            </div>
+            <div>
+                <label for="number"><span>Card number</span><strong><abbr title="required">*</abbr></strong></label>
+                <input type="text" id="number" name="cardnumber">
+            </div>
+            <div>
+                <label for="data">
+                    <span>Expiration data:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                    <em>formatted as mm/yy</em>
+                </label>
+            <input type="data" id="data" name="expiration">
+            </div>
+        </section>
+        <div>
+            <button type="submit">validate the payment</button>
+        </div>
+      </form>
+
+  </body>
+</html>
